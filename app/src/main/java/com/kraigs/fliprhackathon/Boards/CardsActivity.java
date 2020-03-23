@@ -406,12 +406,14 @@ public class CardsActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull CheckHolder holder, int position, @NonNull Checklist model) {
 
-                if (model.getTask()!=null){
-                    GetTimeAgo gta = new GetTimeAgo();
+                GetTimeAgo gta = new GetTimeAgo();
+                Timestamp timestamp = model.getTimestamp();
+                if (timestamp != null){
                     String time = gta.getTimeAgo(model.getTimestamp().getSeconds());
                     holder.timeTv.setText(time);
                 }
 
+                
                 if (model.isDone()){
                     holder.check.setChecked(true);
                 }

@@ -2,20 +2,32 @@ package com.kraigs.fliprhackathon.Model;
 
 import com.google.firebase.Timestamp;
 
+import java.util.ArrayList;
+
 public class InvitedCards {
 
 
     String board,list,card,owner;
     Timestamp timestamp;
+    ArrayList<String> members = new ArrayList<>();
 
     public InvitedCards(){}
 
-    public InvitedCards(String board, String list, String card, String owner, Timestamp timestamp) {
+    public InvitedCards(String board, String list, String card, String owner, Timestamp timestamp, ArrayList<String> members) {
         this.board = board;
         this.list = list;
         this.card = card;
         this.owner = owner;
         this.timestamp = timestamp;
+        this.members = members;
+    }
+
+    public ArrayList<String> getMembers() {
+        return members;
+    }
+
+    public void setMembers(ArrayList<String> members) {
+        this.members = members;
     }
 
     public String getBoard() {
