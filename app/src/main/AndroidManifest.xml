@@ -23,6 +23,7 @@
         <activity android:name=".User.UsersActivity" />
         <activity android:name=".Chat.ImageViewrActivity" />
         <activity android:name=".Chat.ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName=".Chat.ChatsListActivity"/>
         <activity android:name=".Chat.ChatsListActivity"
             android:parentActivityName=".MainActivity"/>
@@ -40,7 +41,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".User.UsersDetailActivity" />
-        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />

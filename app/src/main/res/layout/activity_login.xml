@@ -181,7 +181,7 @@
             android:layout_marginTop="72dp"
             android:padding="16dp"
             android:text="Verification Code"
-            android:textColor="@android:color/white"
+            android:textColor="@color/mainappcolor"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -193,7 +193,7 @@
             android:textSize="17sp"
             android:alpha="0.8"
             android:layout_marginTop="-10dp"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/mainappcolor" />
 
         <com.mukesh.OtpView
             android:id="@+id/otp_view"
@@ -218,7 +218,7 @@
             android:layout_marginTop="72dp"
             android:textSize="30sp"
             android:text="Validate"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/mainappcolor" />
 
     </LinearLayout>
 

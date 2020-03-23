@@ -53,6 +53,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ServerValue;
@@ -528,9 +529,11 @@ public class CardsActivity extends AppCompatActivity {
                 holder.fileNameTv.setText(model.getFileName());
 
                 GetTimeAgo gta = new GetTimeAgo();
-                String time = gta.getTimeAgo(model.getTimestamp().getSeconds());
-                holder.sizeTv.setText(getFileSize(model.getSize()) + ", " +  time);
-
+                Timestamp timestamp = model.getTimestamp();
+                if (timestamp!= null){
+                    String time = gta.getTimeAgo(model.getTimestamp().getSeconds());
+                    holder.sizeTv.setText(getFileSize(model.getSize()) + ", " +  time);
+                }
 
             }
 
@@ -740,15 +743,8 @@ public class CardsActivity extends AppCompatActivity {
 
                 Uri uri = result.getUri();
                 File imageFile = new File(uri.getPath());
-
-                Cursor returnCursor =
-                        getContentResolver().query(uri, null, null, null, null);
-                int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
-                int sizeIndex = returnCursor.getColumnIndex(OpenableColumns.SIZE);
-                returnCursor.moveToFirst();
-
-                String fileName = returnCursor.getString(nameIndex);
-                long size = returnCursor.getLong(sizeIndex);
+                long size = imageFile.length();
+                String fileName = imageFile.getName();
 
                 bitmap = new Compressor(this).setMaxHeight(100).setMaxWidth(100).setQuality(60).compressToBitmap(imageFile);
 
