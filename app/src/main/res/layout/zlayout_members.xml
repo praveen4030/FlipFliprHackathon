@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/raw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite your Friends"
+        android:textColor="@color/lightblack"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/rvLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/raw">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/friendsRv"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvLl"
+        android:text="Add More Friends"
+        android:background="@drawable/curve"
+        android:backgroundTint="@color/greenOk"
+        android:padding="4dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

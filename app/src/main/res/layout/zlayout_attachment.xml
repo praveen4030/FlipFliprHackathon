@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attch From"
+        android:textColor="@color/lightblack"
+        android:textSize="27sp"
+        android:layout_margin="16sp"/>
+
+    <RelativeLayout
+        android:id="@+id/photoRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="35sp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_perm_contact_calendar_red_300_24dp"
+            android:tint="@color/verylightblack"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Photo"
+            android:layout_toEndOf="@id/icon1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lightblack"
+            android:textSize="18sp"
+            android:alpha="0.7"
+            android:layout_marginStart="16dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fileRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="35sp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_perm_contact_calendar_red_300_24dp"
+            android:tint="@color/verylightblack"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File"
+            android:layout_toEndOf="@id/icon2"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lightblack"
+            android:textSize="18sp"
+            android:alpha="0.7"
+            android:layout_marginStart="16dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linkRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="35sp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_perm_contact_calendar_red_300_24dp"
+            android:tint="@color/verylightblack"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach a link"
+            android:layout_toEndOf="@id/icon3"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lightblack"
+            android:textSize="18sp"
+            android:alpha="0.7"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

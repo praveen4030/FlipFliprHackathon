@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_attachment"
+        android:tint="@color/verylightblack"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/attachmentTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attachment Name"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginStart="16dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"/>
+
+    <TextView
+        android:id="@+id/sizeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size and Time"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginStart="16dp"
+        android:textSize="13sp"
+        android:alpha="0.7"
+        android:layout_below="@id/attachmentTv"
+        android:textColor="@color/lightblack"/>
+
+
+</RelativeLayout>

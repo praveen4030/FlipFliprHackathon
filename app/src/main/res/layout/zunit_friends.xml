@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/user_profile_image"
+            android:layout_marginStart="20dp"
+            android:id="@+id/users_profile_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:id="@+id/nameTv"
+            android:layout_toEndOf="@id/users_profile_image"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/lightblack"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/inviteBt"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="30dp"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/purple"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            android:text="Invite"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

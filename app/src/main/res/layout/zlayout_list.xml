@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create list"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="22sp"
+        android:textColor="@color/lightblack"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/addRawTv"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/addRawTv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listEt"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/curve"
+        android:layout_below="@id/input1"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/lightblack"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>

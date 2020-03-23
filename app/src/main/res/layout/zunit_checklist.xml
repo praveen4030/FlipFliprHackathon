@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <CheckBox
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/checkbox"/>
+
+    <TextView
+        android:id="@+id/tasktv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task"
+        android:textColor="@color/lightblack"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/checkbox"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/lightblack"
+        android:alpha="0.6"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

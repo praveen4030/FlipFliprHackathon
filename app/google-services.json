@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "716875160736",
+    "firebase_url": "https://flipr-hackathon.firebaseio.com",
+    "project_id": "flipr-hackathon",
+    "storage_bucket": "flipr-hackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716875160736:android:2cf810d744505e8c78fdc5",
+        "android_client_info": {
+          "package_name": "com.kraigs.fliprhackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716875160736-mc8ihtboa55se03ej1ckpkfj0t4lujce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kraigs.fliprhackathon",
+            "certificate_hash": "e6eb34d05faf39f180ffe3f1c217074a32254881"
+          }
+        },
+        {
+          "client_id": "716875160736-bees7ct01ekno09bid9ke50fdbtv5o7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFhfWLPJJRUsYB5IfvtCw76fI3NHlzCfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716875160736-bees7ct01ekno09bid9ke50fdbtv5o7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

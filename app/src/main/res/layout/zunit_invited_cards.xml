@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/boardTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Board"
+            android:textColor="@color/lightblack"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/listTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List"
+            android:textColor="@color/lightblack"
+            android:layout_alignParentEnd="true"
+            android:alpha="0.8"
+            android:textSize="17sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/cardTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card"
+            android:alpha="0.7"
+            android:layout_below="@id/boardTv"
+            android:textColor="@color/lightblack"
+            android:textSize="17sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/userTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joined By"
+            android:alpha="0.7"
+            android:layout_below="@id/cardTv"
+            android:textColor="@color/lightblack"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

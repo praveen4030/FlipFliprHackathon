@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/listNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List name"
+            android:textColor="@color/lightblack"
+            android:padding="6dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/littlelightgrey">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cardRv"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addCardTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add card"
+            android:textSize="18sp"
+            android:padding="6dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/greenOk" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

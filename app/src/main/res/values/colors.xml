@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3E67D6</color>
+    <color name="colorPrimaryDark">#3757B0</color>
+    <color name="colorAccent">#875FDE</color>
+    <color name="littlelightgrey">#F3F3F3</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#3E67D6</color>
+    <!--    <color name="purple">#CEB9FE</color>-->
+    <!--    <color name="darkpurple">#8464D2</color>-->
+    <color name="darkpurple">#3E67D6</color>
+
+    <color name="bluish">#875FDE</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="grey">#CDE0E0E0</color>
+    <color name="littlegrey">#CDF6F4F4</color>
+    <color name="secondary">#831850</color>
+    <color name="lightgrey">#F3F3F3</color>
+    <!--<color name="lightgrey">#70E9E9E9</color>-->
+
+    <color name="yellow">#FFEC57</color>
+    <color name="lightyellow">#F7F1C4</color>
+
+    <color name="red">#F33C2F</color>
+    <color name="transparent">#00E9E9E9</color>
+    <color name="lightblack">#424242</color>
+    <color name="verylightblack">#C2C0C0</color>
+
+    <color name="redOk">#E74C3C</color>
+
+    <color name="mainappcolor">#2D3D4C</color>
+
+    <color name="greyPrimary">#959CA2</color>
+    <!--<color name="lightgrey">#70E9E9E9</color>-->
+    <color name="orange">#ff4500</color>
+    <color name="lightorange">#92FDB8A8</color>
+    <color name="secondaryLight">#f48fb1</color>
+
+    <color name="green">#00bfa5</color>
+    <color name="darkblue">#E105166B</color>
+    <color name="colorblue">#303F9F</color>
+    <color name="pink">#fe104d</color>
+    <color name="transparent_red">#4BF33C2F</color>
+    <color name="pay_green">#ff1ab55f</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="fontcolor">#363636</color>
+    <color name="transparent_yellow">#9CFFC000</color>
+    <color name="light_yellow">#9CFFCC30</color>
+    <color name="home_grey">#EEEEEE</color>
+    <color name="whitegrey">#F8F8F8</color>
+    <color name="blue">#00BCD4</color>
+    <color name="lightred">#FFB6B6</color>
+    <color name="greenOk">#2ECC71</color>
+    <color name="Darkred">#D32F2F</color>
+    <color name="littleblack">#929292</color>
+    <color name="textblack">#494949</color>
+    <color name="mainappcolour">#000051</color>
+
+    <color name="allpostsgrey">#565656</color>
+
+    <color name="color_log_in">#94019c8f</color>
+    <color name="color_sign_up">#93303f9f</color>
+</resources>
